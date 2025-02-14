@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge", "CodeChallenge.csproj", "{D4DC1B38-3B19-435F-B6BF-B62FAA28D40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge.Tests", "..\CodeChallenge.Tests\CodeChallenge.Tests.csproj", "{83CFB938-0403-478F-9156-86C28659E6AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4DC1B38-3B19-435F-B6BF-B62FAA28D40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DC1B38-3B19-435F-B6BF-B62FAA28D40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DC1B38-3B19-435F-B6BF-B62FAA28D40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DC1B38-3B19-435F-B6BF-B62FAA28D40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CFB938-0403-478F-9156-86C28659E6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CFB938-0403-478F-9156-86C28659E6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CFB938-0403-478F-9156-86C28659E6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CFB938-0403-478F-9156-86C28659E6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

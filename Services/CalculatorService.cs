@@ -11,10 +11,6 @@ namespace CodeChallenge.Services
         public int CalculcateAddForString(string input)
         {
             var stringParts = GetStringParts(input);
-            if(stringParts.Count() > 2)
-            {
-                throw new ArgumentException($"Expected 2 numbers, got {stringParts}");
-            }
 
             var numbers = stringParts.Select(x => {
                 var result = 0;

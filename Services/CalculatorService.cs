@@ -22,11 +22,12 @@ namespace CodeChallenge.Services
             });
 
             ValidateNoNegativeNumbers(numbers);
+            numbers = FilterOutNumbersGreaterThan1000(numbers);
 
             return numbers.Sum();
         }
 
-        internal IList<string> GetStringParts(string input)
+        internal IEnumerable<string> GetStringParts(string input)
         {
             if (input == null || string.IsNullOrEmpty(input))
             {
@@ -46,6 +47,11 @@ namespace CodeChallenge.Services
             {
                 throw new Exception($"Input string contained the following negative numbers: {string.Join(",", negativeNumbers)}");
             }
+        }
+
+        internal IEnumerable<int> FilterOutNumbersGreaterThan1000(IEnumerable<int> values)
+        {
+            return values.Where(x => x < 1000).Select(x => x);
         }
     }
 }

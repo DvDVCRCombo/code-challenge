@@ -8,6 +8,8 @@ namespace CodeChallenge.Services
 {
     public class CalculatorService
     {
+        private string[] _delimiters = { ",", "\n", Environment.NewLine };
+
         public int CalculcateAddForString(string input)
         {
             var stringParts = GetStringParts(input);
@@ -28,7 +30,7 @@ namespace CodeChallenge.Services
                 return new List<string>();
             }
 
-            var stringParts = input.Split(',').Select(x => x).ToList();
+            var stringParts = input.Split(_delimiters, StringSplitOptions.None);
 
             return stringParts;
         }
